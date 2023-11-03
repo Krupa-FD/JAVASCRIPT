@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to Apply JS</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Ways to Apply JS</h1>
+    <dl>
+        <dt><h2>External JS</h2></dt>
+        <dd>External JavaScript refers to JavaScript code that is stored in a separate file with a .js extension. <br>This file contains JavaScript functions, variables, and code logic that can be reused across multiple web pages. <br>By linking this external JavaScript file to an HTML document using a &lt;script&gt; tag with the src attribute, you can maintain cleaner and more organized code, improve code reusability, and make it easier to manage and update the JavaScript functionality of a website. <br> This approach also helps to separate the structure (HTML), presentation (CSS), and behavior (JavaScript) of a web page, adhering to the principle of the "separation of concerns" in web development.</dd>
+        <dt><h2>Internal JS</h2></dt>
+        <dd>Internal JavaScript, also known as inline JavaScript, refers to JavaScript code that is directly embedded within an HTML document. <br> It is placed between &lt;script&gt; tags within the &lt;head&gt; or at the end of the &lt;body&gt; section of an HTML file. <br>This allows developers to include JavaScript code directly within the HTML file itself, without the need for an external .js file. <br>Internal JavaScript is useful for smaller scripts or for situations where the code is specific to a particular page and doesn't need to be reused elsewhere. <br>While convenient for quick implementations, it's generally recommended to use external JavaScript files for larger, reusable code snippets to promote cleaner, more maintainable code.</dd>
+    </dl>
+
+    <script>
+        // Internal js is here
+        alert('Internal JS is written like this')
+    </script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

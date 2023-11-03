@@ -1,0 +1,1 @@
+alert('External JS is written like this')
