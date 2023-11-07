@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS changes the style</title>
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="style">Javascript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('style').style.color='red'">Click Me</button>
+
+    <p id="hide">Javascript can hide the HTML element.</p>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Click Here</button>
+
+    <p>Javascript can show hidden elements.</p>
+    <!-- <button type="button" onclick="document.getElementById('hide').style.display='block'">Click Me!</button> -->
+    <p id="show" style="display: none;">Hello Javascript!</p>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">Click Me!</button>
+</body>
+</html>
