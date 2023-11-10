@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Objects</title>
+</head>
+<body>
+    <h1>Constant Objects</h1>
+    <h3>You can change the properties of a constant object.</h3>
+    <p id="demo"></p>
+    <script>
+        const person={
+            name : "Krupa",
+            Age : 21,
+            Study : "IT"
+        };
+
+        //change a property
+        person.Study="computer";
+
+        //add a property
+        person.id="student";
+
+        document.getElementById('demo').innerHTML=person.name;
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Arrays</title>
+</head>
+<body>
+    <h1>Constant arrays</h1>
+    <h3>You can change the elements of a constant array.</h3>
+    <p id="demo"></p>
+    <script>
+        //create an array
+        const car=["Amaze","Kia","Thar"];
+
+        //change an element
+        car[1]="RangeRover";
+        //const car=["Amaze","Rangerover","Thar"]; //this will give an error
+
+        //add an element
+        car.push("Swift");
+
+        document.getElementById('demo').innerHTML=car;
+    </script>
+</body>
+</html>
