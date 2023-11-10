@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Hoisting</title>
+</head>
+<body>
+    <h1> JS Hoisting</h1>
+
+    <p>Variables defined with var are hoisted to the top and can be initialized at any time. <br> 
+        You can use the variable before it is declared</p>
+
+    <p>Variables defined with let are also hoisted to the top of the block, but not initialized. <br>
+        Using a let variable before it is declared will result in a ReferenceError</p> 
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        Name="Krupa";
+        document.getElementById("demo").innerHTML=Name;
+        var Name;  //it is possible
+
+        carName="Amaze";
+        document.getElementById("demo1").innerHTML=carName;
+        let carName; //it gives reference error
+    </script>
+</body>
+</html>
