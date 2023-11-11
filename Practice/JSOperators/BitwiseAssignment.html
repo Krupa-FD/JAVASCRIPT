@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Assignment Operators</title>
+</head>
+<body>
+    <h1>Bitwise AND Assignment Operator</h1>
+    <p id="demo"></p>
+    <script>
+        let x = 100;  // 1100100
+        x &= 5;       // 0000101   
+        // AND operator performs multiplication where 11=1 10=0 01=0 00=0
+        document.getElementById('demo').innerHTML=x;
+    </script>
+
+    <h1>Bitwise OR Assignment Operator</h1>
+    <p id="demo1"></p>
+    <script>
+        let y = 100;  // 1100100
+        y |= 5;       // 0000101   
+        // OR operator performs addition where 11=1 10=1 01=1 00=0
+        document.getElementById('demo1').innerHTML=y;
+    </script>
+
+    <h1>Bitwise XOR Assignment Operator</h1>
+    <p id="demo2"></p>
+    <script>
+        let z = 100;  // 1100100
+        z ^= 5;       // 0000101   
+        // XOR operator performs 11=0 10=1 01=1 00=0
+       document.getElementById('demo2').innerHTML=z;
+</script>
+
+</body>
+</html>
