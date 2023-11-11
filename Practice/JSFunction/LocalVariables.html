@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local variables</title>
+</head>
+<body>
+    <h1>Local variables in JS function</h1>
+
+    <h3>Variables declared within a JavaScript function, become LOCAL to the function. <br>
+
+        Local variables can only be accessed from within the function.</h3>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let type="Outside: " + typeof carName;
+        document.getElementById('demo').innerHTML=type;
+
+        function myFunction(){
+            let carName="Rangerover";
+            let type="Inside: " + typeof carName + " " + carName;
+            document.getElementById("demo1").innerHTML=type;
+        }
+        myFunction();
+    </script>    
+</body>
+</html>
